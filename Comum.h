@@ -7,13 +7,12 @@ using namespace std;
 
 class Comum
 {
+    int ID;
+    string MARCA;
+    
     public:
         Comum();
         virtual ~Comum();
-
-    protected:
-
-    private:
 };
 
 #endif // COMUM_H
