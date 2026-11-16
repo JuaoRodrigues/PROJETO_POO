@@ -1,11 +1,28 @@
-#include "Comum.h"
+#define COMUM_H
 
-Comum::Comum()
-{
-    //ctor
-}
+#include <iostream>
+#include <string>
 
-Comum::~Comum()
+using namespace std;
+
+class Comum
 {
-    //dtor
-}
+    int ID;
+    string MARCA;
+    float PROBABILIDADE_AVARIA;
+    int X;
+    int Y;
+
+    public:
+        Comum();
+        Comum(int _id, string _marca, float _probAvaria, int _x, int _y);
+        virtual ~Comum();
+
+        int getID() const;
+        string getMARCA() const;
+        float getPROBABILIDADE_AVARIA() const;
+        int getX() const;
+        int getY() const;
+};
+
+#endif // COMUM_H
